@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.col{
+float: left;
+width:25%;
+margin:10px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Fliping Cards Task</h1>
+<h3>Description</h3>
+<div class="row">
+<div class="flip-card col">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/ceo.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <h1>Mr. Mohit Prajapat</h1>
+    </div>
+    <div class="flip-card-back">
+        <p>Global Security Head</p>
+        <p>We love this Guy</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card col">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/Amit.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <h1>Mr. Amit Saini</h1>
+    </div>
+    <div class="flip-card-back">        
+        <p>General Manager</p>
+        <p>Creative guy</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card col">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/Mudit.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <h1>Mr. Mudit Jain</h1>
+    </div>
+    <div class="flip-card-back">
+        
+        <p>Asset Manager</p>
+        <p>Tea is my world</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card col">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/manas.png" alt="Avatar" style="width:300px;height:300px;">
+      <h1>Mr. Manas Singh</h1>
+    </div>
+    <div class="flip-card-back">        
+        <p>Global Head</p>
+        <p>Short Tempered guy</p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
